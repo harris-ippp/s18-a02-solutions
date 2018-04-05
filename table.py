@@ -12,6 +12,6 @@ rate = rate / 100 / 12
 # use range function to enumerate down payments
 for down in range(int(down_min), int(down_max), 1000):
     loan = price - down
-    payment = mortgage.calculate_payment(loan, rate, term*12)
+    payment = mortgage.mortgage_payment(loan, rate, term*12)
 
     print(down, round(payment, 2))

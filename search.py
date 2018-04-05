@@ -14,7 +14,7 @@ b = price
 
 while True:
     c = (a + b)/2
-    Fc = mortgage.calculate_payment(price - c, rate, term*12)
+    Fc = mortgage.mortgage_payment(price - c, rate, term*12)
 
     if (abs(fc - payment) < 1):
         break

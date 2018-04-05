@@ -8,6 +8,6 @@ term = float(input('Loan term (years): '))
 
 loan = price - down # calculate loan amount
 rate = rate / 100 / 12 # calculate monthly rate as a decimal
-payment = mortgage.calculate_payment(loan, rate, term*12)
+payment = mortgage.mortgage_payment(loan, rate, term*12)
 
 print(round(payment, 2))
