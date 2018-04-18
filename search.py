@@ -16,9 +16,11 @@ while True:
     c = (a + b)/2
     Fc = mortgage.mortgage_payment(price - c, rate, term*12)
 
-    if (abs(fc - payment) < 1):
+    if (abs(Fc - payment) < 1):
         break
-    elif fc < payment:
+    elif Fc < payment:
         b = c
     else:
         a = c
+
+print("Down Payment:", round(c,2))
